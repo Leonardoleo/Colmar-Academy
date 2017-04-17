@@ -138,13 +138,18 @@ section.banner {
 }
 
 .sidebar div:first-child {
-  margin-top: 16px;
+  padding-top: 16px;
+  background-color: lightgrey;
+}
+
+.sidebar div:nth-child(3n) {
+  background-color: grey;
 }
 
 .sidebar-block {
   display: inline-flex;
   align-items: center;
-  width: 428px;
+  width: 423px;
 }
 
 .sidebar-block img {
@@ -154,6 +159,10 @@ section.banner {
 
 .sidebar-mobile {
   display: none;
+}
+
+.textbox {
+  margin-right: 16px
 }
 
 /*Courses*/
@@ -191,7 +200,7 @@ section.banner {
 }
 
 .course-holder .textbox {
-  width: 100%;
+  width: 220px;
   height: 140px;
   display: flex;
   flex-direction: column;
@@ -200,4 +209,54 @@ section.banner {
 
 .courses-mobile {
   display: none;
+}
+
+/*Thesis*/
+
+.thesis {
+  display: block;
+}
+
+.thesis h5 {
+  width: 100%;
+  text-align: center;
+  padding-top: 32px;
+  padding bottom: 32px;
+}
+
+.thesis-content {
+  display: inline-flex;
+}
+
+.video {
+  margin-right: 16px;
+}
+
+video {
+  margin-bottom: 24px;
+}
+
+#thesis {
+  border-left: none;
+  margin-top: 32px;
+}
+
+#thesis div:first-child{
+  background-color: grey;
+  padding-top: 0px;
+}
+
+/*Footer*/
+
+footer {
+  height: 64px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid lightgrey;
+}
+
+footer span {
+  margin-left: 24px;
 }
