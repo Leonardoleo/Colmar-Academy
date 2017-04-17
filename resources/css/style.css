@@ -100,6 +100,7 @@ section.banner {
 .button {
   background-color: firebrick;
   width: 100%;
+  margin-right: 16px;
   text-align: center;
 }
 
