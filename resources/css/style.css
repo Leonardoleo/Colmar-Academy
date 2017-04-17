@@ -2,6 +2,7 @@
 
 html {
   font-size: 16px;
+  font-family: 'Quattrocento', serif;
 }
 
 section {
@@ -9,20 +10,41 @@ section {
   display: flex;
 }
 
+body section:nth-child(even) {
+  background-color: #687083;
+}
+
 h1  {
-  font-weight: 900;
-  color: darkgrey;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1B202B;
   font-size: 2.5rem;
-  line-height: 1.2;
+  line-height: 1.5;
   margin-bottom: 30px;
 }
 
 h2 {
-  font-weight: 600;
-  color: darkgrey;
-  font-size: 1.5rem;
-  line-height: 1.2;
-  margin-bottom: 30px;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: 400;
+  color: #C5CAD7;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+h5 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: #1B202B;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: #687083;
+
 }
 
 /*Header*/
@@ -43,16 +65,22 @@ header {
 .logo span {
   font-size: 18px;
   text-transform: uppercase;
+  vertical-align: middle;
+  line-height: 27px;
 }
 
 #colmar {
-  font-weight: 600;
-  color: black;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #1B202B;
 }
 
 #academy {
-  font-weight: 400;
-  color: grey;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #687083;
 }
 
 nav ul {
@@ -64,8 +92,9 @@ nav ul {
 
 ul li a {
   margin-left: 16px;
+  font-size: 0.9rem;
   text-decoration: none;
-  color: black;
+  color: #1B202B;
 }
 nav.mobile {
   display: none;
@@ -74,7 +103,6 @@ nav.mobile {
 /*Banner*/
 
 section.banner {
-  background-color: grey;
   top: 64px;
 }
 
@@ -97,19 +125,25 @@ section.banner {
   width: 320px;
 }
 
-.button {
-  background-color: firebrick;
+.banner-content a {
+  background-color: #1B202B;
   width: 100%;
   margin-right: 16px;
   text-align: center;
+  text-decoration: none;
 }
 
-.button h4 {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  font-weight: 500;
-  color: white;
+.banner-content a h4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
 
+.banner-content a:hover {
+  background-color: #404655;
 }
 
 /*Information*/
@@ -124,10 +158,20 @@ section.banner {
 .feature-content img {
   width: 100%;
   height: auto;
+  margin-bottom: 32px
 }
 
 .feature-content h5 {
   margin-bottom: 24px;
+
+}
+
+.feature-content span {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #687083;
+  margin-top: 30px;
 
 }
 
@@ -136,21 +180,22 @@ section.banner {
   flex-direction: column;
   border-left: 1px solid grey;
   padding-bottom: 32px;
+  width: 40%;
 }
 
 .sidebar div:first-child {
   padding-top: 16px;
-  background-color: lightgrey;
+  background-color: #C5CAD7;
 }
 
 .sidebar div:nth-child(3n) {
-  background-color: grey;
+  background-color: #687083;
 }
 
 .sidebar-block {
   display: inline-flex;
   align-items: center;
-  width: 423px;
+  width: 100%;
 }
 
 .sidebar-block img {
@@ -169,7 +214,6 @@ section.banner {
 /*Courses*/
 
 .courses {
-  background-color: gray;
   display: block;
 }
 
@@ -243,7 +287,7 @@ video {
 }
 
 #thesis div:first-child{
-  background-color: grey;
+  background-color: #687083;
   padding-top: 0px;
 }
 
