@@ -40,10 +40,34 @@ h5 {
   font-size: 2rem;
 }
 
+h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  color: #1B202B;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
 p {
   font-size: 0.9rem;
-  line-height: 1.2rem;
+  line-height: 1rem;
   color: #687083;
+
+}
+
+/*General @1024px*/
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 1.25;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
 
 }
 
@@ -146,6 +170,23 @@ section.banner {
   background-color: #404655;
 }
 
+/*Banner @1024px*/
+
+@media only screen and (max-width: 1024px) {
+  .banner-img {
+    width: 50%;
+    margin-left: 16px;
+  }
+
+  .banner-content a {
+    width: 90%;
+  }
+  .banner-content a h4 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
 /*Information*/
 
 .feature-content {
@@ -178,7 +219,7 @@ section.banner {
 .sidebar {
   display: flex;
   flex-direction: column;
-  border-left: 1px solid grey;
+  border-left: 1px solid #C5CAD7;
   padding-bottom: 32px;
   width: 40%;
 }
@@ -189,7 +230,7 @@ section.banner {
 }
 
 .sidebar div:nth-child(3n) {
-  background-color: #687083;
+  background-color: #C5CAD7;
 }
 
 .sidebar-block {
@@ -209,6 +250,31 @@ section.banner {
 
 .textbox {
   margin-right: 16px
+}
+
+.textbox p {
+  font-family: "Quattrocento Sans", sans-serif;
+  margin-bottom: 1.25rem;
+}
+
+.textbox a {
+  font-family: "Quattrocento Sans", sans-serif;
+  color: #404655;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+/*Information @1024px*/
+
+@media only screen and (max-width: 1024px) {
+  .feature-content {
+    width: 50%;
+    margin-left: 16px
+  }
+
+  .sidebar {
+    width: 50%;
+  }
 }
 
 /*Courses*/
@@ -252,8 +318,36 @@ section.banner {
   margin-left: 16px;
 }
 
+.course-holder .textbox span {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 200;
+  font-size: 0.9rem;
+  color: #687083;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
 .courses-mobile {
   display: none;
+}
+
+/*Courses @1024px*/
+
+@media only screen and (max-width: 1024px) {
+  .courses {
+    padding-left: 16px;
+  }
+
+  .course-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .course-holder {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 }
 
 /*Thesis*/
@@ -287,9 +381,16 @@ video {
 }
 
 #thesis div:first-child{
-  background-color: #687083;
+  background-color: #C5CAD7;
   padding-top: 0px;
 }
+
+/*Thesis @1024px*/
+
+@media only screen and (max-width: 1024px) {
+  .thesis h5 {
+    padding-left: 16px;
+  }
 
 /*Footer*/
 
@@ -299,9 +400,18 @@ footer {
   display: inline-flex;
   justify-content: space-between;
   padding-top: 16px;
-  border-top: 1px solid lightgrey;
+  border-top: 1px solid #C5CAD7;
 }
 
 footer span {
   margin-left: 24px;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 0.75rem;
+  color: #687083;
+}
+
+footer nav ul li a {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 0.75rem;
+  color: #687083;
 }
